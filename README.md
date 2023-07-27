@@ -1,2 +1,2 @@
-# my_pracs
+# oopsem1
 repository for pracs
