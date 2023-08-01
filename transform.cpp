@@ -14,7 +14,7 @@ int main() {
 
   // Convert decimal_number to binary and print the binary representation
   cout << "The binary representation is: ";
-  // if user enters 0, then output 0, else if input is greater than 0, modulus of num into remainder
+  // if user enters 0, then output 0, else if while input is greater than 0, modulus of num into remainder
   if (num == 0) {
     cout << "0";
   } else {
@@ -24,8 +24,10 @@ int main() {
       binary = to_string(remainder) + binary;
       num = num / 2;
     }
+    // display the binary (in 1s and 0s)
     cout << binary;
   }
+  // skip a line
   cout << endl;
   return 0;
 }
