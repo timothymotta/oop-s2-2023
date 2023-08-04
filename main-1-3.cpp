@@ -21,17 +21,10 @@ using namespace std;
 void count_digits(int array[4][4]);
 
 int main() {
-  int matrix[4][4];
+  // declare matrix
+  
+  int matrix[4][4] = {{1, 2, 3, 1}, {4, 5, 2, 4}, {7, 0, 8, 0}, {1, 7, 9, 0}};
 
-  // prompts user to enter values to fill up the matrix
-  cout << "Please enter matrix elements between 0-9:" << endl;
-  for (int i = 0; i < 4; i++) {
-    for (int j = 0; j < 4; j++) {
-      cin >> matrix[i][j];
-    }
-  }
-
-  // displays matrix
   count_digits(matrix);
 
   return 0;
