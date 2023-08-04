@@ -34,5 +34,5 @@ void count_digits(int array[4][4]) {
       cout << ";";
     }
   }
-  cout << endl;
+  cout << ";" << endl;
 }
