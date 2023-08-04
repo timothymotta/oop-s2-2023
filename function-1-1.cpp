@@ -1,3 +1,5 @@
+// Timothy Motta a1831126
+
 // Given a matrix of integers, return the sum of the elements along the main
 // diagonal (top left bottom right)
 
