@@ -10,11 +10,10 @@ using namespace std;
 
 void print_matrix(int array[10][10]) {
   // loop through rows and columns to store array
-  for (i = 0; i < 10; i++) {
-    cin >> array[10][10];
+  for (int i = 0; i < 10; i++) {
     for (int j = 0; j < 10; j++) {
-      cin >> array[10][10];
+      std::cout << array[i][j] << " ";
     }
+    std::cout << std::endl;
   }
-  return array;
 }
