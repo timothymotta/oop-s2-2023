@@ -1,20 +1,23 @@
 // Timothy Motta a1831126
 
-// Given a matrix of integers, return the sum of the elements along the main diagonal (top left bottom right)
+// Given a multi-dimensional array of integers, print all its elements.
+// You may assume that the dimensions are 10x10, as in the signature.
+// Elements should be printed by row, with a space separating elements on a row,
+// and a newline separating rows (use `std::endl`).
 
 #include <iostream>
 using namespace std;
 
 // call function
-int sum_diagonal(int array[4][4]);
+void print_matrix(int array[10][10]);
 
 int main() {
-  // declare matrices
-  int matrix[4][4] = {
-      {2, 4, 6, 8}, {10, 12, 14, 16}, {18, 20, 22, 24}, {26, 28, 30, 32}};
+  // declare array
+  array[10][10] = {1 2 3 4 5 6 7 8 9 10};
 
-  int result = sum_diagonal(matrix);
-  cout << "Sum of elements along the main diagonal:  \n" << result << endl;
-
+// display
+  std::endl;
+  cout << "Array: ", array[10][10];
+  
   return 0;
 }
