@@ -10,8 +10,8 @@ int main()
 {
   int *arry;  // declare the array of pointer
 
-  arry = readNumbers();  // calling the function that return the pointer of
-                         // array
+  arry = readNumbers();    // calling the function that return the pointer of
+                           // array
   printNumbers(arry, 10);  // calling the function for printing the array
 
   return 0;
