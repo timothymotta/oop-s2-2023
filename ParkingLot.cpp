@@ -45,3 +45,13 @@ void ParkingLot::unparkVehicle(int id) {
         std::cout << "Vehicle unparked successfully\n";
     }
 }
+
+int ParkingLot::countOverstayingVehicles(int maxParkingDuration) {
+    int count = 0;
+    for (int i = 0; i < this->count; i++) {
+        if (vehicles[i]->getParkingDuration() > maxParkingDuration) {
+            count++;
+        }
+    }
+    return count;
+}
