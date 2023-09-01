@@ -2,10 +2,10 @@
 #include <iostream>
 #include <string>
 
-#include "bus.h"
-#include "car.h"
-#include "motorbike.h"
-#include "vehicle.h"
+#include "Bus.h"
+#include "Car.h"
+#include "Motorbike.h"
+#include "Vehicle.h"
 
 int main() {
   int numCars, numBuses, numMotorbikes;
