@@ -22,7 +22,7 @@ void ParkingLot::parkVehicle(Vehicle* vehicle) {
         count++;
         std::cout << "Vehicle parked successfully\n";
     } else {
-        std::cout << "The parking lot is full\n";
+        std::cout << "The lot is full\n";
     }
 }
 
@@ -35,7 +35,7 @@ void ParkingLot::unparkVehicle(int id) {
         }
     }
     if (index == -1) {
-        std::cout << "Vehicle not in the parking lot\n";
+        std::cout << "Vehicle not in the lot\n";
     } else {
         delete vehicles[index];
         count--;

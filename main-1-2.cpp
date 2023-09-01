@@ -11,7 +11,7 @@ int main() {
 
     while (true) {
         int choice;
-        std::cout << "=== Choose an option: ===\n";
+        std::cout << "Choose an option:\n";
         std::cout << "1. Park a vehicle\n";
         std::cout << "2. Unpark a vehicle\n";
         std::cout << "3. Quit\n";
