@@ -22,19 +22,19 @@ int main() {
 
   for (int i = 0; i < numCars; i++) {
     int id;
-    std::cout << "Enter car ID: ";
+    std::cout << "Enter car ID (number only): ";
     std::cin >> id;
     vehicles[vehicleCount++] = new Car(id);
   }
   for (int i = 0; i < numBuses; i++) {
     int id;
-    std::cout << "Enter bus ID: ";
+    std::cout << "Enter bus ID (number only): ";
     std::cin >> id;
     vehicles[vehicleCount++] = new Bus(id);
   }
   for (int i = 0; i < numMotorbikes; i++) {
     int id;
-    std::cout << "Enter motorbike ID: ";
+    std::cout << "Enter motorbike ID (number only): ";
     std::cin >> id;
     vehicles[vehicleCount++] = new Motorbike(id);
   }

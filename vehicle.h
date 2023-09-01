@@ -2,8 +2,6 @@
 #define VEHICLE_H
 
 #include <ctime>
-#include <iostream>
-#include <string>
 
 class Vehicle {
  private:
