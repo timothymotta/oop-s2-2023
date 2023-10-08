@@ -1,4 +1,5 @@
-// USBConnection.h
+#ifndef USBCONNECTION_H
+#define USBCONNECTION_H
 
 #pragma once
 #include <stack>
@@ -11,8 +12,8 @@ private:
     USBConnection(int id) : ID(id) {}
 
 public:
-    // Public function to create USBConnection objects
-    static USBConnection* createConnection() {
+    // Public static function to create USBConnection objects
+    static USBConnection* CreateUsbConnection() {
         if (ids.empty()) {
             return nullptr; // No available ports
         } else {
@@ -22,7 +23,12 @@ public:
         }
     }
 
-    // Destructor to return a used ID to the stack
+    // Public function to get the ID of the USBConnection
+    int get_id() const {
+        return ID;
+    }
+
+    // Public destructor to return a used ID to the stack
     ~USBConnection() {
         ids.push(ID);
     }
@@ -34,3 +40,5 @@ private:
 
 // Initialize the stack with IDs {3, 2, 1}
 std::stack<int> USBConnection::ids({3, 2, 1});
+
+#endif
