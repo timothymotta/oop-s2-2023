@@ -10,4 +10,4 @@ public:
     Explosion explode();
 };
 
-#endif
+#endif // MINE_H

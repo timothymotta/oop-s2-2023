@@ -1,13 +1,19 @@
-#include <iostream>
 #include "Game.h"
+#include "GameEntity.h"
+#include "Utils.h"
+#include <iostream>
 
 int main() {
     Game game;
+    
     std::vector<GameEntity*> entities = game.initGame(3, 2, 10, 10);
-    game.set_entities(entities);
+    
+    for (int i = 0; i < entities.size(); i++) {
+        GameEntity* entity = entities[i];
+        std::cout << "Entity Type: " << entity->getType() << ", Position: (" << std::get<0>(entity->getPos()) << ", " << std::get<1>(entity->getPos()) << ")\n";
+    }
 
-    // Run the game loop with a maximum of 5 iterations and a mine distance threshold of 3.0
-    game.gameLoop(5, 3.0);
+    game.gameLoop(10, 2.0);
 
     return 0;
 }

@@ -1,23 +1,18 @@
-#include <iostream>
-#include "Explosion.h"
 #include "Ship.h"
 #include "Mine.h"
+#include "Explosion.h"
+#include <iostream>
 
 int main() {
-    // Create a Ship and a Mine
-    Ship myShip(3, 4);
-    Mine myMine(7, 7);
+    Ship ship(1, 1);
+    Mine mine(5, 5);
 
-    // Move the Ship
-    myShip.move(2, 3);
+    ship.move(1, 0);
+    Explosion explosion(5, 5);
+    explosion.apply(ship);
 
-    // Explode the Mine and apply the Explosion effect to the Ship
-    Explosion explosion = myMine.explode();
-    explosion.apply(myShip);
-
-    // Display Ship's new position and type
-    std::cout << "Ship Position: (" << std::get<0>(myShip.getPos()) << ", " << std::get<1>(myShip.getPos()) << ")" << std::endl;
-    std::cout << "Ship Type: " << myShip.getType() << std::endl;
+    std::cout << "Ship Type: " << ship.getType() << ", Position: (" << std::get<0>(ship.getPos()) << ", " << std::get<1>(ship.getPos()) << ")\n";
+    std::cout << "Mine Type: " << mine.getType() << ", Position: (" << std::get<0>(mine.getPos()) << ", " << std::get<1>(mine.getPos()) << ")\n";
 
     return 0;
 }

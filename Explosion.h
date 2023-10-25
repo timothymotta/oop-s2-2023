@@ -2,7 +2,6 @@
 #define EXPLOSION_H
 
 #include "GameEntity.h"
-#include "Effect.h"
 
 class Explosion : public GameEntity, public Effect {
 public:
@@ -10,4 +9,4 @@ public:
     void apply(GameEntity& entity) override;
 };
 
-#endif
+#endif // EXPLOSION_H

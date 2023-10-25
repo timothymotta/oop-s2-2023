@@ -1,20 +1,18 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <vector>
 #include "GameEntity.h"
-#include "Utils.h"
+#include <vector>
 
 class Game {
 public:
-    std::vector<GameEntity*> get_entities();
-    void set_entities(const std::vector<GameEntity*>& entities);
     std::vector<GameEntity*> initGame(int numShips, int numMines, int gridWidth, int gridHeight);
     void gameLoop(int maxIterations, double mineDistanceThreshold);
-    ~Game(); // Destructor to clean up dynamically allocated entities
-
+    std::vector<GameEntity*> get_entities();
+    void set_entities(std::vector<GameEntity*> new_entities);
+    
 private:
     std::vector<GameEntity*> entities;
 };
 
-#endif
+#endif // GAME_H
